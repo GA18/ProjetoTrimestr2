@@ -1268,7 +1268,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 433336540}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.09, y: -0.532, z: 0}
+  m_LocalPosition: {x: -0.09, y: -0.556, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 540790153}
@@ -1362,7 +1362,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 540790150}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.9, y: -1.09, z: 0}
+  m_LocalPosition: {x: -2.9, y: -1.392, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 433336541}
@@ -1430,7 +1430,7 @@ MonoBehaviour:
   feet: {fileID: 433336541}
   feetWidth: 0.5
   feetHeight: 0.1
-  isGrounded: 0
+  isGrounded: 1
   whatIsGround:
     serializedVersion: 2
     m_Bits: 512
