@@ -35,6 +35,7 @@ public class PlayerControler : MonoBehaviour {
 		if (Input.GetButtonDown("Jump")) {
 			Jump();
 		}
+		ShowFalling();
 	}
 
 
@@ -57,9 +58,20 @@ public class PlayerControler : MonoBehaviour {
 		anim.SetInteger("State", 0);
 		}
 	}
+
+		void ShowFalling() {
+			if (rb.velocity.y< 0f) {
+				anim.SetInteger("State", 3);
+			}
+		}
 	void Jump () {
 		isJumping = true;
 		rb.AddForce(new Vector2(0f, jumpSpeed));
 		anim.SetInteger("State", 1);
+	}
+	void OnCollisionEnter2D(Collision2D other) {
+		if (other.gameObject.layer == LayerMask.NameToLayer("Ground")) {
+			isJumping = false;
+		}
 	}
 }
